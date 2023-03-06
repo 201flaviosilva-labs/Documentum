@@ -7,14 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Documentum",
-  tagline: "Dinosaurs are cool",
+  tagline: "Learn how to program",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: "https://201flaviosilva-labs.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/Documentum/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -23,6 +23,8 @@ const config = {
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -50,7 +52,7 @@ const config = {
       }),
     ],
   ],
-
+  themes: ["@docusaurus/theme-live-codeblock"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -106,6 +108,23 @@ const config = {
               {
                 label: "Pull Requests",
                 href: "https://github.com/201flaviosilva-labs/Documentum/pulls",
+              },
+            ],
+          },
+          {
+            title: "Learn More",
+            items: [
+              {
+                label: "Edgar Front-End",
+                href: "https://github.com/ed1992alves/frontend",
+              },
+              {
+                label: "W3schools",
+                href: "https://www.w3schools.com/",
+              },
+              {
+                label: "Mozilla",
+                href: "https://developer.mozilla.org/en-US/",
               },
             ],
           },
