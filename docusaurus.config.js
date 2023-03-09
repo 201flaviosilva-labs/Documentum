@@ -69,7 +69,7 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Learning",
           },
           {
             href: "https://github.com/201flaviosilva-labs/Documentum",
@@ -85,7 +85,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Learning",
                 to: "/docs/intro",
               },
             ],
@@ -126,6 +126,10 @@ const config = {
                 label: "Mozilla",
                 href: "https://developer.mozilla.org/en-US/",
               },
+              {
+                label: "Dev Docs",
+                href: "https://devdocs.io/",
+              },
             ],
           },
         ],
@@ -134,6 +138,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["powershell"],
       },
     }),
 };
