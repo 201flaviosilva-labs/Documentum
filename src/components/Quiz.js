@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 export default function Quiz({ questions }) {
 	const correctStyle = { color: "green", };
@@ -15,7 +16,7 @@ export default function Quiz({ questions }) {
 
 	function handleSubmit() {
 		console.clear();
-		if (selectedAnswers.length < questions.length) return alert("You are missing some questions!");
+		if (selectedAnswers.length < questions.length) return Swal.fire({ icon: "info", title: "You are missing some questions!", });
 
 		const correctSum = selectedAnswers.reduce((acc, cur, questionIndex) => {
 			const { options, answer } = questions[questionIndex];
@@ -23,7 +24,12 @@ export default function Quiz({ questions }) {
 			return acc;
 		}, 0);
 
-		alert(`${(correctSum / questions.length) * 100}%`);
+		const percentage = (correctSum / questions.length) * 100;
+
+		const icon = percentage > 75 ? "success" : "warning";
+		const title = `${percentage > 75 ? "Nice!" : "Just that?!"} ${percentage}%`;
+
+		Swal.fire({ icon, title });
 
 		setHasSubmitted(true);
 	}
