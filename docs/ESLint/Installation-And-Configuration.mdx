@@ -178,9 +178,51 @@ Well if you are using `TypeScript` check this option.
 
 Self descriptive question :)
 
+### How would you like to define a style for your project?
+
+:::note
+This option only will appear if you selected `To check syntax, find problems, and enforce code style` in the first question.
+:::
+
+```txt
+? How would you like to define a style for your project? …
+▸ Use a popular style guide
+  Answer questions about your style
+```
+
+If you select:
+
+- `Use a popular style guide` will apear a list of some popular comuns templates styles for javascript code select;
+- `Answer questions about your style` you will answer some questions that to generate you own style formatter;
+
+### Which style guide do you want to follow?
+
+:::note
+This option only will appear if you selected `To check syntax, find problems, and enforce code style` in the first question and you selected `Use a popular style guide` in the last question.
+:::
+
+```txt
+? Which style guide do you want to follow? …
+▸ Airbnb: https://github.com/airbnb/javascript
+  Standard: https://github.com/standard/standard
+  Google: https://github.com/google/eslint-config-google
+  XO: https://github.com/xojs/eslint-config-xo
+```
+
+The best way to select one of the options above is to try it in action in your project.
+
+But I will leave here some personal opinion about every one:
+
+- `Airbnb` -> uses `''` and `;` and in `React` you need to use `.jsx` (Mehh)
+- `Standard` -> uses `''` and not use `;` (I hate this one)
+- `Google` -> uses `''` and `;` all function needs to be documented with `JSDoc` (I don't like this)
+- `XO` -> uses `''` and `;`, use "tabs" instead of spaces (Mehh)
+
 ### What type of modules does your project use?
 
-This question only will appear if you selected `To check syntax, find problems, and enforce code style` in the first question.
+:::note
+This option only will appear if you selected `To check syntax, find problems, and enforce code style` in the first question.
+:::
 
 :::danger
 Improve this

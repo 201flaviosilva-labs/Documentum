@@ -28,7 +28,7 @@ To autofix some problems on save create a new file in your root directory like t
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "javascriptreact", "html", "css", "scss"]
+  "eslint.validate": ["javascript", "javascriptreact"],
 }
 ```
 

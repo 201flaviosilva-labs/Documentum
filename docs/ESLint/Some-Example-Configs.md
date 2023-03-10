@@ -39,27 +39,11 @@ module.exports = {
 	"rules": {
 		"react/jsx-uses-react": "error",
 		"react/jsx-uses-vars": "error",
-		"linebreak-style": [
-			"warn",
-			"unix"
-		],
-		"quotes": [
-			"warn",
-			"double"
-		],
-		"semi": [
-			"warn",
-			"always"
-		],
-		"no-unused-vars": [
-			"warn", 
-			{
-				"vars": "all",
-				"args": "after-used",
-				"ignoreRestSiblings": false,
-			}
-		],
-		"react/prop-types": "off"
+		"react/prop-types": "off",
+		"linebreak-style": ["warn", "unix"],
+		"quotes": ["warn", "double"],
+		"semi": ["warn", "always"],
+		"no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
 	}
 };
 ```
@@ -69,6 +53,13 @@ module.exports = {
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "javascriptreact", "html", "css", "scss"],
+  "eslint.validate": ["javascript", "javascriptreact"],
 }
+```
+
+```txt title="My answers to the prompt config"
+✔ What style of indentation do you use? · tab
+✔ What quotes do you use for strings? · double
+✔ What line endings do you use? · unix
+✔ Do you require semicolons? · Yes
 ```
