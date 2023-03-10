@@ -15,7 +15,6 @@ export default function Quiz({ questions }) {
 	}
 
 	function handleSubmit() {
-		console.clear();
 		if (selectedAnswers.length < questions.length) return Swal.fire({ icon: "info", title: "You are missing some questions!", });
 
 		const correctSum = selectedAnswers.reduce((acc, cur, questionIndex) => {

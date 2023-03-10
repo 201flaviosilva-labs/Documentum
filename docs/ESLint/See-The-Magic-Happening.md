@@ -8,7 +8,7 @@ If you open a javascript file with some errors/problems you will see some underl
 
 To fix that you can add this script to your `package.json`:
 
-```json
+```json {3} title="package.json"
 ...
 "scripts": {
    "lint": "eslint ./"
