@@ -1,6 +1,10 @@
-import Quiz from "@site/src/components/Quiz";
+---
+title: ESLint Quiz
+tags:
+  - Quiz
+---
 
-# ESLint Quiz
+import Quiz from "@site/src/components/Quiz";
 
 <Quiz
   questions={[
