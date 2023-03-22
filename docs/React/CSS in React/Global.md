@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import {CSSGlobal1, CSSGlobal2} from "./Global.jsx";
+
 # Global CSS
 
 ## What the hell is global CSS?
@@ -10,7 +12,7 @@ sidebar_position: 2
 - The style is applied globally;
 - You write your CSS in `.css` files like `style.css`;
 - The CSS files most be in the `src` folder;
-- Normally it's used to reset the styles;
+- Normally it's used to reset the styles and prototypes;
 
 ## Let's see the magic happening
 
@@ -48,7 +50,9 @@ h1 {
 }
 ```
 
-So far you will probably see a `red` title (`h1`) with the `Global CSS` content in the top left of the page.
+So far you will probably see a `red` title (`h1`) with the `Global CSS` content in the top left of the page:
+
+<CSSGlobal1 />
 
 ### Add and styling new elements
 
@@ -95,3 +99,4 @@ p {
 	color: yellow;
 }
 ```
+<CSSGlobal2 />

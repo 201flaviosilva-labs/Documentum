@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function CodeOutput({ children, title }) {
+export default function CodeOutput({ children, title, bodyPadding = 4 }) {
 	const YELLOW = "#eec64c";
 	const GREY = "#45494F";
 
 	const Wrapper = styled.div`
 		display: flex;
 		flex-direction: column;
+		margin: 10px 0;
 		background: white;
 		border: 2px solid ${GREY};
 		border-radius: 4px;
@@ -21,11 +22,11 @@ export default function CodeOutput({ children, title }) {
 
 	const Body = styled.div`
 		flex: 1;
-		padding: 4px;
+		padding: ${bodyPadding}px;
 	`;
 
 	return (
-		<Wrapper>
+		<Wrapper title="Output">
 			{title && <Header>{title}</Header>}
 			<Body>{children}</Body>
 		</Wrapper>

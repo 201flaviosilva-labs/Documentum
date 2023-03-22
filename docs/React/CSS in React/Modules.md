@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import {CSSModules1, CSSModules2, SCSSModules} from "./Modules.jsx";
@@ -10,6 +10,7 @@ import {CSSModules1, CSSModules2, SCSSModules} from "./Modules.jsx";
 
 - The CSS modules it's a React native way to work with scoped CSS (that means the style only will be applied in the component);
 - The CSS files should be like this: `ComponentName.module.css`;
+- - Normally it's used to basic project and prototypes;
 
 ## Let's see the magic happening
 
