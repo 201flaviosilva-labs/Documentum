@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Create The First App
 
 To start with React you need to have the [node](https://nodejs.org/) and [npm](https://npmjs.com/) in your computer.

@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # See the magic happening
 
 If you open a javascript file with some errors/problems you will see some underlines.

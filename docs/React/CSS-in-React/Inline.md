@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 import {Inline1, DynamicInline1, DynamicInline2,DynamicInline3} from "./Inline.jsx";
 
 # Inline Style

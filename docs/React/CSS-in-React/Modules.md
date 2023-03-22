@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 import {CSSModules1, CSSModules2, SCSSModules} from "./Modules.jsx";
 
 # CSS Modules

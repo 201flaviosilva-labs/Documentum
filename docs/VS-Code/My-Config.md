@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # My VS Code JSON configuration
 
 ```json

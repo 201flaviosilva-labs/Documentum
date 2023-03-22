@@ -1,9 +1,28 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import Swal from "sweetalert2";
 
 export default function Quiz({ questions }) {
 	const correctStyle = { color: "green", };
 	const wrongStyle = { color: "red", };
+
+	const Wrapper = styled.div`
+		display: flex;
+		flex-direction: column;
+		`;
+	const Question = styled.div`
+		margin: 8px 0;
+		padding: 8px;
+		border: 1px solid gray;
+		border-radius: 4px;
+		`;
+
+	const SubmitBTN = styled.button`
+		padding: 8px 4px;
+		font-size: 20px;
+		border: 1px solid white;
+		border-radius: 4px;
+	`;
 
 	const [selectedAnswers, setSelectedAnswers] = useState([]);
 	const [hasSubmitted, setHasSubmitted] = useState(false);
@@ -34,9 +53,9 @@ export default function Quiz({ questions }) {
 	}
 
 	return (
-		<div>
+		<Wrapper>
 			{questions.map((question, index) => (
-				<div key={index}>
+				<Question key={index}>
 					<h3>{question.question}</h3>
 					{question.options.map((option, optionIndex) => (
 						<div key={optionIndex}>
@@ -57,10 +76,10 @@ export default function Quiz({ questions }) {
 							</label>
 						</div>
 					))}
-				</div>
+				</Question>
 			))}
 
-			<button onClick={handleSubmit}>Submit</button>
-		</div>
+			<SubmitBTN onClick={handleSubmit}>Submit</SubmitBTN>
+		</Wrapper>
 	);
 }

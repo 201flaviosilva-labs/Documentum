@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 import {CSSGlobal1, CSSGlobal2,CSSGlobal3} from "./Global.jsx";
 
 # Global CSS
