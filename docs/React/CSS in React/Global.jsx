@@ -1,5 +1,5 @@
 import CodeOutput from "@site/src/components/CodeOutput";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 export function CSSGlobal1() {
@@ -51,6 +51,44 @@ export function CSSGlobal2() {
 				<p className="my-styled-p-1">With class 1</p>
 				<p>General styled p 2</p>
 				<p className="my-styled-p-2">With class 2</p>
+			</Wrapper>
+		</CodeOutput>
+	);
+}
+
+export function CSSGlobal3() {
+	const Wrapper = styled.div`
+		width: 100%;
+		height: 100%;
+		background-color: black;
+
+		.green {
+			color: green;
+		}
+
+		.red {
+			color: red;
+		}
+
+		.blue {
+			color: blue;
+		}
+	`;
+
+	const [num, setNum] = useState(0);
+
+	function getColor() {
+		if (num > 0) return "green";
+		else if (num < 0) return "red";
+		else return "blue";
+	}
+
+	return (
+		<CodeOutput title="Dynamic Inline Style">
+			<Wrapper>
+				<p className={getColor()}>Number: {num}</p>
+				<button onClick={() => setNum(num + 1)}>Add</button>
+				<button onClick={() => setNum(num - 1)}>Remove</button>
 			</Wrapper>
 		</CodeOutput>
 	);

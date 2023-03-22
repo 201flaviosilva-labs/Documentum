@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import {CSSGlobal1, CSSGlobal2} from "./Global.jsx";
+import {CSSGlobal1, CSSGlobal2,CSSGlobal3} from "./Global.jsx";
 
 # Global CSS
 
@@ -100,3 +100,53 @@ p {
 }
 ```
 <CSSGlobal2 />
+
+### Dynamic Classes
+
+Using static styles makes no fun, so lets add some fun to the boring CSS code using conditions.
+
+Fist let's create some nice classes in the `App.css` file:
+
+```css title="App.css" showLineNumbers
+.App {
+	background-color: black;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+```
+
+Now let's apply some nice logic in the `App.js` file:
+
+```jsx title="App.js" showLineNumbers
+import { useState } from "react";
+
+export function App() {
+	const [num, setNum] = useState(0);
+
+	function getColor() {
+		if (num > 0) return "green";
+		else if (num < 0) return "red";
+		else return "blue";
+	}
+
+	return (
+		<div className="App">
+			<p className={getColor()}>Number: {num}</p>
+			<button onClick={() => setNum(num + 1)}>Add</button>
+			<button onClick={() => setNum(num - 1)}>Remove</button>
+		</div>
+	);
+}
+```
+
+<CSSGlobal3 />
