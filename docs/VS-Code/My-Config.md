@@ -1,6 +1,12 @@
 # My VS Code JSON configuration
 
-```json
+To open `settings.json` you need to press `Ctrl` + `Shift`+ `P` in Windows/Linux and `command` + `Shift` + `P`.
+
+This will pop-up a dialog (`Command Palette`), and then you need to type `Open Settings (JSON)`, select the first option.
+
+![Command Palette - Open User Settings JSON](./imgs/Command-Palette-Open-User-Settings-JSON.png)
+
+```json title="settings.json" showLineNumbers
 {
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -93,7 +99,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.organizeImports": true,
-    "source.sortMembers": true
+    "source.sortMembers": true,
+    "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Consolas, monaco, monospace, Comic Sans MS, cursive, sans-serif",

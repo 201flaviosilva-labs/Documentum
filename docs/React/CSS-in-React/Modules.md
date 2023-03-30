@@ -6,7 +6,7 @@ import {CSSModules1, CSSModules2, SCSSModules} from "./Modules.jsx";
 
 - The CSS modules it's a React native way to work with scoped CSS (that means the style only will be applied in the component);
 - The CSS files should be like this: `ComponentName.module.css`;
-- - Normally it's used to basic project and prototypes;
+- Normally it's used to basic project and prototypes;
 
 ## Let's see the magic happening
 
@@ -113,7 +113,7 @@ Now you probably see a `red` text (`h1`) with `CSS Modules` content and above th
 
 > I don't like vanilla CSS, so I'm limited to use CSS modules, I can't use SASS modules?
 
-**Of course!**
+**Of course not!**
 
 First you need to instal a new dependency [node-sass](https://www.npmjs.com/package/node-sass): `npm i node-sass -D`
 
