@@ -1,6 +1,6 @@
 ---
 title: Ex Add Two Arrays
-description: Some all elements of 2 arrays in one
+description: Add all elements of 2 arrays into one
 tags:
   - Exercise
 ---
