@@ -1,11 +1,12 @@
 ---
 title: Star Wars Roll
+details: Make the Star Wars text animation
 tags:
   - Exercise
-  - HTML
-  - CSS
 ---
 
-import StarWarsRoll from "./Star-Wars-Roll.jsx";
+## Preview
 
-<StarWarsRoll />
+<iframe
+style={{width:"100%", minHeight:500}}
+src="https://jsfiddle.net/201flaviosilva/4yuoza3m/show"></iframe>

@@ -93,6 +93,10 @@ const config = {
                 label: "Learning",
                 to: "/docs/intro",
               },
+              {
+                label: "Exercises",
+                to: "/docs/tags/exercise",
+              },
             ],
           },
           {
