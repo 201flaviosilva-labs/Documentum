@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function CodeOutput({ children, title, bodyPadding = 4 }) {
+export default function CodeOutput({ children, title, bodyPadding = 4, bodyBackground = "white" }) {
 	const YELLOW = "#eec64c";
 	const GREY = "#45494F";
 
@@ -9,7 +9,7 @@ export default function CodeOutput({ children, title, bodyPadding = 4 }) {
 		display: flex;
 		flex-direction: column;
 		margin: 10px 0;
-		background: white;
+		background: ${bodyBackground};
 		border: 2px solid ${GREY};
 		border-radius: 4px;
 		box-shadow: 0 0 2px ${YELLOW}, 0 0 4px ${YELLOW}, 0 0 8px ${YELLOW};

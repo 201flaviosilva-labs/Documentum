@@ -80,6 +80,7 @@ const sidebars = {
       items: [
         "React/intro",
         "React/CreateTheFirstApp",
+        "React/Key-Prop",
         {
           type: "category",
           label: "CSS in React",
