@@ -45,6 +45,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/201flaviosilva-labs/Documentum/tree/main/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
